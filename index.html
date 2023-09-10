@@ -3,30 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Suraj Rajput</title>
     <link rel="stylesheet" href="custom.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/a091be9d24.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!--------------Header----------->
     <div id="header">
       <div class="container">
         <nav>
           <img src="logo.jpg" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
         <div class="header-text">
           <p>Web Developer</p>
-          <h1>Hi, I am <br />Suraj Rajput</h1>
+          <h1>Hi, I am <br /><span class="suraj">Suraj </span>Rajput</h1>
         </div>
       </div>
     </div>
-    <!--nav ends-->
+
+    <!-----------About------------------>
     <div id="about">
       <div class="container">
         <div class="row">
@@ -36,22 +42,211 @@
           <div class="about-cols-1">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
-              necessitatibus, quisquam sit culpa facere minus unde ad dolorem
-              iusto esse! Rem veniam illo voluptas laudantium tempore, suscipit
-              temporibus eaque? Alias provident consequuntur magni dignissimos
-              officiis, dolore animi nobis iusto. Cupiditate blanditiis aliquid
-              rem et sint aperiam quasi libero nam ut! Voluptates minima quas
-              exercitationem hic repellendus illo voluptatum deleniti recusandae
-              libero repellat laudantium quod doloremque tempora a iste sit
-              reprehenderit, esse modi? Voluptatem, veritatis non corrupti eum,
-              ad aspernatur consequuntur, a enim vel obcaecati amet. Ratione
-              modi aperiam optio deserunt, ut alias earum nihil doloribus minus
-              velit nostrum ad ullam.
+              I am Suraj Rajput from Jind, Haryana, India. Currently an employee
+              of Tech Mahindra Limited in Customer Support Role and now working
+              in web development as a freelancer. Also i made some projects
+              using ReactJs and nodeJs. I want to join a respected organisation
+              as a developer role to get an experience of Developer's
+              responsiblities.
             </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Developer</span><br />Website Development</li>
+                <li><span>CSA</span><br />Customer Support Services</li>
+                <li><span>Accounts</span><br />Managae Accounts Work</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Tech Mahindra Limited</span><br />Customer Support
+                  Associate
+                </li>
+                <li>
+                  <span>SNP Technologies Pvt. Ltd.</span><br />Front-Office
+                  Attendent
+                </li>
+                <li><span>AN Construction Company</span><br />Accountant</li>
+                <li><span>EME TEchnologies</span><br />Web Developer</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>MCA</span><br />Choudhary Ranbir Singh University</li>
+                <li>
+                  <span>BCA</span><br />Government Post Graduation College
+                </li>
+                <li>
+                  <span>12<sup>th</sup></span
+                  ><br />DAV Centenary Public School
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-----------Services----------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I did an internship in web development from EME Technologies.
+              During that internship i made project some projects.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I learn adobe for designing purpose. Now I learn figma to make
+              UI/UX design of the website.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              I made some mini-projects and a full-on-web based application and
+              also working on Some Projects.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------Portfolio------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Social.jpg" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                autem!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="movie.jpg" alt="" />
+            <div class="layer">
+              <h3>Movie Platform App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                autem!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="shop.jpg" alt="" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim,
+                autem!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!--------Contact------------>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <div><h1>Contact Me</h1></div>
+            <p><i class="fa-solid fa-envelope"></i>Surajrajput8522@gmail.com</p>
+            <p><i class="fa-solid fa-address-book"></i>+91 83071-68914</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="textarea"
+                rows="6"
+                placeholder="Your Meassage"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright <i class="fa-sharp fa-regular fa-copyright"></i> 2023 ! Made
+        by Suraj Rajput
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
